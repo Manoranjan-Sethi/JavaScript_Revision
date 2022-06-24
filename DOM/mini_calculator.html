@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="enter 1st number" id="num1" value="">
+        <input type="number" placeholder="enter 2nd number" id="num2" value="">
+    </div>
+    <div>
+        <button onclick="add()">ADD</button>
+        <button onclick="subtract()">SUBTRACT</button>
+        <button onclick="multiply()">MULTIPLY</button>
+        <button onclick="divide()">DIVIDE</button>
+    </div>
+
+</body>
+</html>
+<script>
+    let input1 = document.getElementById("num1").value
+    let input2 = document.getElementById("num2").value
+    // console.log(input1,input2)
+    input1 = parceInt(input1)
+    input2 = parceInt(input2)
+    
+    function add(){
+        
+        let ans = input1+input2;
+        alert(`Your output is ${ans}`)
+    }
+    function subtract(){
+        let ans = input1-input2;
+        alert(`Your output is ${ans}`)
+    }
+    function multiply(){
+        let ans = input1*input2;
+        alert(`Your output is ${ans}`)
+    }
+    function divide(){
+        let ans = input1/input2;
+        alert(`Your output is ${ans}`)
+    }
+</script>
